@@ -68,7 +68,7 @@ elif option == "About":
             <p>
                 <b>Project Objectives:</b> The goals of the project are to understand what happens under the
                 hood of these libraries and their functions, and provide you with hands-on experiences in
-                developing and using these functions.
+                developing and using these functions. Your application may be a search app or an app that analyzes data.
             <p>
             <p>
                 <b>Data Preview / Summary:</b> Leverages developed <i>read_csv</i> function from the 
