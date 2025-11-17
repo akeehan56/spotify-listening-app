@@ -80,11 +80,12 @@ elif option == "About":
             </p>
             <p>
                 <b>Filter:</b> Leverages developed <i>filter</i> and <i>select</i> methods in the 
-                <b><u>DataFrame</u></b> class.
+                <b><u>DataFrame</u></b> class. Allows user to search for either an Artist or a Track Name
+                and see how many times they streamed for either that artist or that song.
             </p>
             <p>
                 <b>Plot:</b> Leverages developed <i>group_by</i> method in the 
-                <b><u>DataFrame</u></b> class.
+                <b><u>DataFrame</u></b> class. Allows user to analyze their listening data by either a pie chart, bar chart or time series chart.
             </p>
             <p>
                 <b>Join:</b> Leverages developed <i>join, aggregate & group_by</i> methods in the 
