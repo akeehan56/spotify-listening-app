@@ -1,0 +1,373 @@
+{
+  "stats": [
+    {
+      "date": "2025-09-29",
+      "streamCount": 0,
+      "secondsPlayed": 0,
+      "topTracks": [
+        {
+          "name": "As Long As You're Mine",
+          "streamCount": 4,
+          "secondsPlayed": 957
+        },
+        {
+          "name": "Defying Gravity",
+          "streamCount": 3,
+          "secondsPlayed": 1059
+        },
+        {
+          "name": "Don't Stop The Music",
+          "streamCount": 3,
+          "secondsPlayed": 801
+        },
+        {
+          "name": "No Hands (feat. Roscoe Dash & Wale)",
+          "streamCount": 3,
+          "secondsPlayed": 789
+        },
+        {
+          "name": "Yeah! (feat. Lil Jon & Ludacris)",
+          "streamCount": 3,
+          "secondsPlayed": 750
+        },
+        {
+          "name": "I Won't Give Up",
+          "streamCount": 3,
+          "secondsPlayed": 696
+        },
+        {
+          "name": "No Good Deed - From \"Wicked\" Original Broadway Cast Recording/2003",
+          "streamCount": 3,
+          "secondsPlayed": 686
+        },
+        {
+          "name": "Popular",
+          "streamCount": 3,
+          "secondsPlayed": 672
+        },
+        {
+          "name": "Dancing Through Life - From \"Wicked\" Original Broadway Cast Recording/2003",
+          "streamCount": 3,
+          "secondsPlayed": 634
+        },
+        {
+          "name": "What Is This Feeling?",
+          "streamCount": 3,
+          "secondsPlayed": 629
+        }
+      ],
+      "topArtists": [
+        {
+          "name": "Stephen Schwartz",
+          "streamCount": 36,
+          "secondsPlayed": 7231
+        },
+        {
+          "name": "Pitbull",
+          "streamCount": 16,
+          "secondsPlayed": 3439
+        },
+        {
+          "name": "Taylor Swift",
+          "streamCount": 14,
+          "secondsPlayed": 2864
+        },
+        {
+          "name": "Idina Menzel",
+          "streamCount": 29,
+          "secondsPlayed": 6116
+        },
+        {
+          "name": "Kristin Chenoweth",
+          "streamCount": 24,
+          "secondsPlayed": 4845
+        },
+        {
+          "name": "Original Broadway Cast of Hamilton",
+          "streamCount": 19,
+          "secondsPlayed": 3449
+        },
+        {
+          "name": "Lady Gaga",
+          "streamCount": 10,
+          "secondsPlayed": 1982
+        },
+        {
+          "name": "Rihanna",
+          "streamCount": 10,
+          "secondsPlayed": 2215
+        },
+        {
+          "name": "Ariana Grande",
+          "streamCount": 9,
+          "secondsPlayed": 1803
+        },
+        {
+          "name": "Lin-Manuel Miranda",
+          "streamCount": 11,
+          "secondsPlayed": 2071
+        }
+      ],
+      "topGenres": [
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "streamCount": 0,
+      "secondsPlayed": 0,
+      "topTracks": [
+        {
+          "name": "Get Low",
+          "streamCount": 4,
+          "secondsPlayed": 995
+        },
+        {
+          "name": "LoveGame",
+          "streamCount": 4,
+          "secondsPlayed": 864
+        },
+        {
+          "name": "JUMP",
+          "streamCount": 4,
+          "secondsPlayed": 657
+        },
+        {
+          "name": "Golden",
+          "streamCount": 4,
+          "secondsPlayed": 777
+        },
+        {
+          "name": "Do It Like This",
+          "streamCount": 4,
+          "secondsPlayed": 576
+        },
+        {
+          "name": "M.I.A",
+          "streamCount": 4,
+          "secondsPlayed": 517
+        },
+        {
+          "name": "Drop It Like It's Hot",
+          "streamCount": 3,
+          "secondsPlayed": 797
+        },
+        {
+          "name": "No Hands (feat. Roscoe Dash & Wale)",
+          "streamCount": 3,
+          "secondsPlayed": 789
+        },
+        {
+          "name": "Bleeding Love",
+          "streamCount": 3,
+          "secondsPlayed": 786
+        },
+        {
+          "name": "Country Girl (Shake It For Me)",
+          "streamCount": 3,
+          "secondsPlayed": 675
+        }
+      ],
+      "topArtists": [
+        {
+          "name": "KATSEYE",
+          "streamCount": 26,
+          "secondsPlayed": 4390
+        },
+        {
+          "name": "Ariana Grande",
+          "streamCount": 25,
+          "secondsPlayed": 5403
+        },
+        {
+          "name": "Sabrina Carpenter",
+          "streamCount": 23,
+          "secondsPlayed": 4045
+        },
+        {
+          "name": "Lady Gaga",
+          "streamCount": 19,
+          "secondsPlayed": 4224
+        },
+        {
+          "name": "SEVENTEEN",
+          "streamCount": 17,
+          "secondsPlayed": 3334
+        },
+        {
+          "name": "LE SSERAFIM",
+          "streamCount": 16,
+          "secondsPlayed": 2531
+        },
+        {
+          "name": "Stephen Schwartz",
+          "streamCount": 14,
+          "secondsPlayed": 2852
+        },
+        {
+          "name": "XG",
+          "streamCount": 14,
+          "secondsPlayed": 2640
+        },
+        {
+          "name": "Original Broadway Cast of Hamilton",
+          "streamCount": 30,
+          "secondsPlayed": 5088
+        },
+        {
+          "name": "BLACKPINK",
+          "streamCount": 15,
+          "secondsPlayed": 2828
+        }
+      ],
+      "topGenres": [
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "streamCount": 0,
+      "secondsPlayed": 0,
+      "topTracks": [
+        {
+          "name": "Say No to This",
+          "streamCount": 5,
+          "secondsPlayed": 1210
+        },
+        {
+          "name": "One Last Time",
+          "streamCount": 4,
+          "secondsPlayed": 1174
+        },
+        {
+          "name": "The Room Where It Happens",
+          "streamCount": 4,
+          "secondsPlayed": 953
+        },
+        {
+          "name": "Satisfied",
+          "streamCount": 4,
+          "secondsPlayed": 849
+        },
+        {
+          "name": "It's Quiet Uptown",
+          "streamCount": 4,
+          "secondsPlayed": 840
+        },
+        {
+          "name": "Crank That (Soulja Boy)",
+          "streamCount": 4,
+          "secondsPlayed": 710
+        },
+        {
+          "name": "No Hands (feat. Roscoe Dash & Wale)",
+          "streamCount": 3,
+          "secondsPlayed": 789
+        },
+        {
+          "name": "My Shot",
+          "streamCount": 3,
+          "secondsPlayed": 733
+        },
+        {
+          "name": "What'd I Miss",
+          "streamCount": 3,
+          "secondsPlayed": 708
+        },
+        {
+          "name": "I Don't Dance",
+          "streamCount": 3,
+          "secondsPlayed": 651
+        }
+      ],
+      "topArtists": [
+        {
+          "name": "Lin-Manuel Miranda",
+          "streamCount": 61,
+          "secondsPlayed": 11776
+        },
+        {
+          "name": "Leslie Odom Jr.",
+          "streamCount": 49,
+          "secondsPlayed": 9943
+        },
+        {
+          "name": "Original Broadway Cast of Hamilton",
+          "streamCount": 68,
+          "secondsPlayed": 14085
+        },
+        {
+          "name": "Daveed Diggs",
+          "streamCount": 31,
+          "secondsPlayed": 5613
+        },
+        {
+          "name": "Phillipa Soo",
+          "streamCount": 20,
+          "secondsPlayed": 4149
+        },
+        {
+          "name": "Renée Elise Goldsberry",
+          "streamCount": 14,
+          "secondsPlayed": 3272
+        },
+        {
+          "name": "Okieriete Onaodowan",
+          "streamCount": 30,
+          "secondsPlayed": 5486
+        },
+        {
+          "name": "Christopher Jackson",
+          "streamCount": 15,
+          "secondsPlayed": 3231
+        },
+        {
+          "name": "Jasmine Cephas-Jones",
+          "streamCount": 8,
+          "secondsPlayed": 1737
+        },
+        {
+          "name": "One Direction",
+          "streamCount": 5,
+          "secondsPlayed": 934
+        }
+      ],
+      "topGenres": [
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "date": "2025-10-05",
+      "highlightType": "MILESTONE",
+      "milestoneHighlight": {
+        "entity": "alyssa’s 25th 🩶",
+        "milestoneListeningSeconds": 22509
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "highlightType": "STREAKS",
+      "streaksHighlight": {
+        "entity": "Nicki Minaj",
+        "dayStreaks": 5
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "highlightType": "MILESTONE",
+      "multiEntityMilestoneHighlight": {
+        "entities": [
+          "Original Broadway Cast of Hamilton",
+          "Lin-Manuel Miranda",
+          "Leslie Odom Jr.",
+          "Say No to This",
+          "One Last Time",
+          "The Room Where It Happens",
+          "Satisfied",
+          "It's Quiet Uptown",
+          "No Hands (feat. Roscoe Dash & Wale)"
+        ],
+        "milestoneListeningSeconds": 52746
+      }
+    }
+  ]
+}
