@@ -17,3 +17,5 @@ Check out my [Streamlit app](https://spotify-listening-app.streamlit.app/).
    ```
    $ streamlit run main.py
    ```
+
+3. For demo purposes/if you don't have your spotify data ready, please click the checkbox to work through the app using the default data
