@@ -80,17 +80,18 @@ elif option == "Download and Convert Listening Data":
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
             <h2>How to Retrieve and Convert Your Spotify Listening Data</h2>
             <h3>Download</h3>
-            <p>1. Open the <a href="https://www.spotify.com/us/account/privacy/">Spotify Account Privacy Page</a></p>
-            <p>2. Request your data under "Account Data"</p>
-            <p>3. Confirm the email request</p>
-            <p>4. Wait ~4 days for the email with your download link</p>
+            <p>1. Open the <a href="https://www.spotify.com/us/account/privacy/">Spotify Account Privacy Page</a>.</p>
+            <p>2. Request your data under "Account Data".</p>
+            <p>3. Confirm the email request.</p>
+            <p>4. Wait ~4 days for the email with your download link.</p>
             <h3>Convert to CSV</h3>
             <p>
-                Make a copy of this 
+                1. Make a copy of this 
                 <a href="https://colab.research.google.com/drive/1LakN37X4A_BlwrK-n2zvAtcNUeX-V7R_?usp=sharing">
                 Colab Notebook
-                </a>
+                </a>.
             </p>
+            <p>2. Follow the instructions in the notebook to create your csv file for the to upload into the dashboard.</p>
             <p><i>Uploader appears once you leave the home page.</i></p>
         </div>
         """,
