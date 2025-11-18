@@ -27,8 +27,8 @@ st.set_page_config(
 # sidebar
 st.sidebar.title("Menu")
 option = st.sidebar.radio(
-    "",
-    [
+    label="Navigation",
+    options=[
         "Home",
         "Data Preview / Summary",
         "Listening Leaderboard",
@@ -37,7 +37,8 @@ option = st.sidebar.radio(
         "Join",
         "About",
         "Download and Convert Listening Data"
-    ]
+    ],
+    label_visibility="collapsed"   # hides label from UI
 )
 
 # header
