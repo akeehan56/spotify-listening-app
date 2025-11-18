@@ -41,7 +41,7 @@ if option == "Home":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
-            <h3>🎧 Welcome to Your Spotify Listening Dashboard</h3>
+            <h2>🎧 Welcome to Your Spotify Listening Dashboard</h2>
             <p>
                 Discover trends in your Spotify listening history through interactive charts and summaries.
                 Explore your top artists, favorite tracks, and listening habits over time.
@@ -58,11 +58,10 @@ elif option == "Download and Convert Listening Data":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
-            <h3>How to Retrieve and Convert Your Spotify Listening Data</h3>
-            <h2>Download</h2>
+            <h2>How to Retrieve and Convert Your Spotify Listening Data</h2>
+            <h3>Download</h3>
             <p>
-                Discover trends in your Spotify listening history through interactive charts and summaries.
-                Explore your top artists, favorite tracks, and listening habits over time.
+                1. Open Your <a href="https://www.spotify.com/us/account/privacy/">Spotify Account Privacy Page</a>
             </p>
             <p>
                 Use the sidebar to navigate between pages — upload your Spotify data to get started!
@@ -76,7 +75,7 @@ elif option == "About":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
-            <h3>About This Application</h3>
+            <h2>About This Application</h2>
             <p>
                 Created by Alyssa Keehan
             </p>
