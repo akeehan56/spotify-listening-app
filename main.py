@@ -5,26 +5,26 @@ import importlib
 import dataframe
 from dataframe import read_csv
 
-# MATPLOTLIB CONFIG
+# configure
 plt.rcParams["mathtext.default"] = "regular"
 mpl.rcParams["text.usetex"] = False
 
-# RELOAD FOR DEVELOPMENT
+# reloads library in app
 importlib.reload(dataframe)
 
-# STATIC YOUTUBE DATA
+# youtube data for join step
 youtube_df = read_csv("Data/Top_Songs_YouTube.csv").select(
     ["title", "view_count", "channel", "channel_follower_count"]
 )
 
-# PAGE CONFIG
+# main title for app
 st.set_page_config(
     page_title="Spotify Listening Dashboard",
     page_icon="🎧",
     layout="wide"
 )
 
-# SIDEBAR MENU
+# sidebar
 st.sidebar.title("Menu")
 option = st.sidebar.radio(
     "",
@@ -40,7 +40,7 @@ option = st.sidebar.radio(
     ]
 )
 
-# HEADER
+# header
 st.markdown(
     """
     <div style="text-align:center;">
@@ -51,9 +51,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ------------------------------
-# HOME PAGE
-# ------------------------------
+# home
 if option == "Home":
     st.markdown(
         """
@@ -71,9 +69,7 @@ if option == "Home":
         unsafe_allow_html=True
     )
 
-# ------------------------------
-# ABOUT / DOWNLOAD PAGES
-# ------------------------------
+# download spotify data page
 elif option == "Download and Convert Listening Data":
     st.markdown(
         """
@@ -97,7 +93,7 @@ elif option == "Download and Convert Listening Data":
         """,
         unsafe_allow_html=True
     )
-
+# about
 elif option == "About":
     st.markdown(
         """
@@ -115,23 +111,24 @@ elif option == "About":
         unsafe_allow_html=True
     )
 
-# ------------------------------
-# ALL OTHER PAGES REQUIRE DATA
-# ------------------------------
+# all other pages require data input
 else:
     st.subheader("📂 Choose Your Data Source")
-
+    # inserted for grading purposes. allows grader to use default data
     use_default = st.checkbox("Use default dataset (Data/streaming_history.csv)")
 
     df = None
-
+    
+    # use default data
+    # leverages read_csv function in dataframe class
     if use_default:
         try:
             df = read_csv("Data/streaming_history.csv")
             st.success("Loaded default dataset successfully!")
         except Exception as e:
             st.error(f"Failed to load default data: {e}")
-
+    # use uploaded data
+    # leverages read_csv function in dataframe class
     else:
         uploaded_file = st.file_uploader(
             "Upload your Spotify listening CSV",
@@ -141,12 +138,13 @@ else:
         if uploaded_file is not None:
             df = read_csv(uploaded_file)
             st.success("File uploaded successfully!")
-
+    # warning message to user to select option
     if df is None:
         st.warning("Please upload a file or use the default dataset.")
         st.stop()
 
-    # ============= DATA PREVIEW PAGE =============
+    # data preview
+    # uses aggregate method
     if option == "Data Preview / Summary":
         st.subheader("👀 Data Preview")
         n = st.number_input("Number of rows to display:", min_value=1, value=10)
@@ -184,7 +182,7 @@ else:
 
         st.table(summary_rows)
 
-    # ============= LEADERBOARD PAGE =============
+    # leaderboard
     elif option == "Listening Leaderboard":
         st.subheader("🏆 Top Artist / Track by Listens")
         col = st.selectbox("Select column:", ["artistName", "trackName"])
@@ -202,7 +200,8 @@ else:
         rows.sort(key=lambda x: x["count"], reverse=True)
         st.table(rows)
 
-    # ============= FILTER PAGE =============
+    # filter
+    # uses filter, select 
     elif option == "Filter":
         st.subheader("🎯 Filter Data")
 
@@ -217,9 +216,7 @@ else:
             else "artistName"
         )
 
-        filtered_df = df.filter(
-            lambda row: row[selected_column] == selected_value
-        ).select(["endTime", other_col, "msPlayed"])
+        filtered_df = df.filter(lambda row: row[selected_column] == selected_value).select(["endTime", other_col, "msPlayed"])
 
         st.write(f"Filtered {filtered_df.num_rows} rows.")
 
@@ -239,25 +236,17 @@ else:
 
         st.table(rows)
 
-    # ============= PLOT PAGE =============
+    # plot
+    # uses group_by, aggregate
     elif option == "Plot":
         st.subheader("📊 Plot Data")
 
-        plot_type = st.selectbox(
-            "Select plot type:",
-            ["Bar Chart 📊", "Pie Chart 🥧", "Line Chart 📈"]
-        )
+        plot_type = st.selectbox("Select plot type:",["Bar Chart 📊", "Pie Chart 🥧", "Line Chart 📈"])
 
-        # --- Categorical plots ---
+        # categorical data 
         if plot_type in ["Bar Chart 📊", "Pie Chart 🥧"]:
-            selected_cat = st.selectbox(
-                "Categorical variable:",
-                ["artistName", "trackName"]
-            )
-            selected_num = st.selectbox(
-                "Numerical variable:",
-                ["listens", "msPlayed"]
-            )
+            selected_cat = st.selectbox("Categorical variable:",["artistName", "trackName"])
+            selected_num = st.selectbox("Numerical variable:",["listens", "msPlayed"])
 
             grouped = df.group_by(selected_cat)
 
@@ -273,10 +262,7 @@ else:
             rows.sort(key=lambda x: x[selected_num], reverse=True)
             st.table(rows[:10])
 
-            labels = [
-                str(row[selected_cat])[:15].replace("$", "\\$")
-                for row in rows[:20]
-            ]
+            labels = [str(row[selected_cat])[:15].replace("$", "\\$") for row in rows[:20]]
             values = [row[selected_num] for row in rows[:20]]
 
             fig, ax = plt.subplots(figsize=(8, 5))
@@ -296,7 +282,7 @@ else:
             plt.yticks(color="white")
             st.pyplot(fig)
 
-        # --- LINE PLOT ---
+        # numerical 
         else:
             selected_col = st.selectbox("Filter by:", ["artistName", "trackName"])
             unique_vals = sorted([str(v) for v in df.unique(selected_col)])
@@ -339,7 +325,8 @@ else:
             plt.yticks(color="white")
             st.pyplot(fig)
 
-    # ============= JOIN PAGE =============
+    # join
+    # uses group_by, aggregate
     elif option == "Join":
         st.subheader("🔗 Join Streaming Data with YouTube Top Songs")
 
