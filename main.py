@@ -22,7 +22,7 @@ st.set_page_config(page_title="Spotify Listening Dashboard", page_icon="🎧", l
 st.sidebar.title("Menu")
 option = st.sidebar.radio(
     "",
-    ["Home", "Data Preview / Summary", "Listening Leaderboard", "Filter", "Plot", "Join", "About"]
+    ["Home", "Data Preview / Summary", "Listening Leaderboard", "Filter", "Plot", "Join", "About","Download and Convert Listening Data"]
 )
 
 # HEADER
@@ -38,6 +38,23 @@ st.markdown(
 
 # HOME PAGE
 if option == "Home":
+    st.markdown(
+        """
+        <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
+            <h3>🎧 Welcome to Your Spotify Listening Dashboard</h3>
+            <p>
+                Discover trends in your Spotify listening history through interactive charts and summaries.
+                Explore your top artists, favorite tracks, and listening habits over time.
+            </p>
+            <p>
+                Use the sidebar to navigate between pages — upload your Spotify data to get started!
+            </p>
+            <p><i>Note: the uploader appears once you leave this home page.</i></p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+elif option == "Download and Convert Listening Data":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
