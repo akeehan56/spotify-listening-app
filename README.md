@@ -2,7 +2,7 @@
 
 A simple dashboard to track your historical listening data from Spotify
 
-Check out my [Streamlit app]([https://your-app-url.streamlit.app](https://spotify-listening-app.streamlit.app/)).
+<a href="https://spotify-listening-app.streamlit.app/" target="_blank" rel="noopener">Check out my Streamlit app</a>
 
 ### How to run it on your own machine
 
