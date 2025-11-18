@@ -84,7 +84,6 @@ elif option == "Download and Convert Listening Data":
             <p>2. Request your data under "Account Data"</p>
             <p>3. Confirm the email request</p>
             <p>4. Wait ~4 days for the email with your download link</p>
-
             <h3>Convert to CSV</h3>
             <p>
                 Make a copy of this 
