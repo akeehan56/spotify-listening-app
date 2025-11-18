@@ -64,7 +64,20 @@ elif option == "Download and Convert Listening Data":
                 1. Open Your <a href="https://www.spotify.com/us/account/privacy/">Spotify Account Privacy Page</a>
             </p>
             <p>
-                Use the sidebar to navigate between pages — upload your Spotify data to get started!
+                2. Scroll to the Bottom, Click "Account Data" (Should be the Default) and Click "Request Data"
+            </p>
+            <p>
+                3. Open email to confirm the request.
+            </p>
+            <p>
+                4. After about 4 days, you'll receive an email with a link to download your data. 
+            </p>
+            <h3>Convert to CSV</h3>
+            <p>
+                1. Make a Copy of <a href="https://colab.research.google.com/drive/1LakN37X4A_BlwrK-n2zvAtcNUeX-V7R_?usp=sharing">THIS COLLAB NOTEBOOK</a>
+            </p>
+            <p>
+                2. Follow Instructions on the Collab Notebook 
             </p>
             <p><i>Note: the uploader appears once you leave this home page.</i></p>
         </div>
