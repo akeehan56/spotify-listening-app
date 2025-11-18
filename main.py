@@ -58,7 +58,8 @@ elif option == "Download and Convert Listening Data":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
-            <h3>🎧 Welcome to Your Spotify Listening Dashboard</h3>
+            <h3>How to Retrieve and Convert Your Spotify Listening Data</h3>
+            <h2>Download</h2>
             <p>
                 Discover trends in your Spotify listening history through interactive charts and summaries.
                 Explore your top artists, favorite tracks, and listening habits over time.
