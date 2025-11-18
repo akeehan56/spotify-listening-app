@@ -99,19 +99,43 @@ elif option == "About":
     st.markdown(
         """
         <div style="text-align:center; color:white; background-color:#121212; padding:25px; border-radius:12px;">
-            <h2>About This Application</h2>
-            <p>Created by Alyssa Keehan</p>
-            <p>DSCI 551: Foundations of Data Management</p>
+            <h3>About This Application</h3>
             <p>
-                This dashboard analyzes your Spotify listening history using a
-                custom-built DataFrame library developed for the class.
+                Created by Alyssa Keehan
             </p>
-            <p><i>Uploader appears once you leave the home page.</i></p>
+            <p>
+                DSCI 551: Foundations of Data Management
+            </p>
+            <p>
+                <b>Project Objectives:</b> The goals of the project are to understand what happens under the
+                hood of these libraries and their functions, and provide you with hands-on experiences in
+                developing and using these functions.
+            <p>
+            <p>
+                <b>Data Preview / Summary:</b> Leverages developed <i>read_csv</i> function from the 
+                <b><u>DataFrame</u></b> program as well as <i>aggregate</i> method in the 
+                <b><u>DataFrame</u></b> class.
+            </p>
+            <p>
+                <b>Listening Leaderboard:</b> Shows either Top Artists or Top Tracks by Listens in Descending Order.
+            </p>
+            <p>
+                <b>Filter:</b> Leverages developed <i>filter</i> and <i>select</i> methods in the 
+                <b><u>DataFrame</u></b> class.
+            </p>
+            <p>
+                <b>Plot:</b> Leverages developed <i>group_by</i> method in the 
+                <b><u>DataFrame</u></b> class.
+            </p>
+            <p>
+                <b>Join:</b> Leverages developed <i>join, aggregate & group_by</i> methods in the 
+                <b><u>DataFrame</u></b> class.
+            </p>
+            <p><i>Note: the uploader appears once you leave this home page.</i></p>
         </div>
         """,
         unsafe_allow_html=True
     )
-
 # all other pages require data input
 else:
     st.subheader("📂 Choose Your Data Source")
