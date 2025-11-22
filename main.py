@@ -233,7 +233,10 @@ else:
         selected_column = st.selectbox("Filter by:", ["artistName", "trackName"])
         unique_values = sorted([str(v) for v in df.unique(selected_column)])
 
-        selected_value = st.selectbox("Select value:", unique_values)
+        # default index set to 50 (ateez for artist)
+        default_index = min(50, len(unique_values) - 1)
+
+        selected_value = st.selectbox("Select value:", unique_values, index = default_index)
 
         other_col = (
             "trackName"
