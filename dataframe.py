@@ -168,7 +168,7 @@ class DataFrame:
 
         matches = []  # list of (li, ri) index pairs
 
-        # --- Substring matching logic ---
+        # Substring matching logic
         if substring:
             if len(left_keys) != 1 or len(right_keys) != 1:
                 raise ValueError("Substring matching only supports single-column joins for now.")
@@ -185,7 +185,6 @@ class DataFrame:
                         continue
                     right_val_str = str(right_val).strip().lower()
 
-                    # ✅ Only join if full left track name appears as a standalone phrase in right title
                     pattern = r"\b" + re.escape(left_val_str) + r"\b"
                     if re.search(pattern, right_val_str):
                         matches.append((li, ri))
@@ -194,7 +193,7 @@ class DataFrame:
                     matches.append((li, None))
 
         else:
-            # --- Exact matching logic (your original version) ---
+            # exact matching
             def build_index(df, keys):
                 idx = {}
                 for i in range(df.num_rows):
@@ -223,7 +222,7 @@ class DataFrame:
                     for ri in right_rows:
                         matches.append((li, ri))
 
-        # --- Combine rows ---
+        # combine rows
         for li, ri in matches:
             row = {}
             for col in self.columns:
