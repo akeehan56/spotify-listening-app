@@ -33,13 +33,13 @@ class DataFrame:
     def from_rows(cls, rows: list[dict]):
         """Create a DataFrame from a list of dictionaries (rows)."""
         if not rows:
-            return cls({})  # empty DataFrame
+            return cls({})
 
-        # Extract column names
+        # extract column names
         columns = rows[0].keys()
         data = {col: [] for col in columns}
 
-        # Fill columns with row values
+        # fill columns with row values
         for row in rows:
             for col in columns:
                 data[col].append(row.get(col))
@@ -55,7 +55,7 @@ class DataFrame:
         """Return basic statistics for numeric columns."""
         desc = {}
         for col, values in self.data.items():
-            # Try converting to float for numeric stats
+            # numeric values convert to float
             numeric = []
             for v in values:
                 try:
@@ -119,11 +119,11 @@ class DataFrame:
     def join(self,other,on=None,left_on=None,right_on=None,how="inner",lsuffix="_x",rsuffix="_y",substring=False):
         """Apply a join between 2 columns, optionally using substring matching."""
 
-        # Handle parameter compatibility
+        # handle parameter compatibility
         if on is not None and (left_on is not None or right_on is not None):
             raise ValueError("Cannot specify both 'on' and 'left_on'/'right_on'")
 
-        # Normalize keys
+        # normalize keys
         if on is not None:
             if isinstance(on, str):
                 on = [on]
@@ -140,7 +140,7 @@ class DataFrame:
             left_keys = left_on
             right_keys = right_on
 
-        # Validate keys exist
+        # validate keys exist
         for lcol in left_keys:
             if lcol not in self.columns:
                 raise KeyError(f"Join key '{lcol}' not found in left DataFrame.")
@@ -148,7 +148,7 @@ class DataFrame:
             if rcol not in other.columns:
                 raise KeyError(f"Join key '{rcol}' not found in right DataFrame.")
 
-        # Prepare combined columns (handle duplicates)
+        # prepare combined columns (handle duplicates)
         new_cols = {}
         for col in self.columns:
             if col in other.columns and col not in right_keys:
@@ -162,13 +162,13 @@ class DataFrame:
 
         result_data = {col: [] for col in new_cols.keys()}
 
-        # Build join key lists
+        # build join key lists
         left_keys_values = [tuple(self.data[k][i] for k in left_keys) for i in range(self.num_rows)]
         right_keys_values = [tuple(other.data[k][i] for k in right_keys) for i in range(other.num_rows)]
 
         matches = []  # list of (li, ri) index pairs
 
-        # Substring matching logic
+        # substring matching
         if substring:
             if len(left_keys) != 1 or len(right_keys) != 1:
                 raise ValueError("Substring matching only supports single-column joins for now.")
@@ -241,7 +241,7 @@ class DataFrame:
         return DataFrame(result_data)
 
 
-# --- Helper functions ---
+# helper functions
 def convert_value(val):
     """Try to convert strings to int or float, otherwise keep as str."""
     if val == "":
@@ -275,8 +275,8 @@ def read_csv(source, sep=","):
         re.VERBOSE
     )
 
-    # Handle file path vs. file-like object
-    if hasattr(source, "read"):  # e.g., UploadedFile or BytesIO
+    # file path vs. file-like object
+    if hasattr(source, "read"): 
         # Ensure it's read as text
         if isinstance(source.read(0), bytes):
             text = source.read().decode("utf-8-sig")
@@ -285,7 +285,7 @@ def read_csv(source, sep=","):
         source.seek(0)  # reset pointer if needed
         lines = text.splitlines()
     else:
-        # Standard file path
+        # standard file path
         with open(source, encoding="utf-8-sig") as f:
             lines = f.read().splitlines()
 
