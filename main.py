@@ -314,7 +314,7 @@ else:
         else:
             selected_col = st.selectbox("Filter by:", ["artistName", "trackName"])
             unique_vals = sorted([str(v) for v in df.unique(selected_col)])
-            selected_val = st.selectbox("Select value:", unique_vals)
+            selected_val = st.selectbox("Select value:", unique_vals, index = 50)
 
             selected_num = st.selectbox("Measure:", ["listens", "msPlayed"])
 
